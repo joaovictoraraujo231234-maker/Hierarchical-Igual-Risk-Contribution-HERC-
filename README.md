@@ -11,7 +11,7 @@ Para mitigar a fragilidade topológica do mercado, este projeto implementa o alg
 * **Topologia de Mercado (Machine Learning):** Aplicação do Método de Ligação de Ward (*Ward Linkage*) para agrupar hierarquicamente os ativos em um Dendrograma. O algoritmo identifica correlações implícitas e separa "clusters" econômicos naturais (ex: Renda Fixa atrelada à inflação, Utilities, Câmbio e Criptoativos).
 * **Motor Híbrido de Risco de Cauda:** A alocação de capital ocorre de forma Top-Down (bisseção recursiva). Em vez da volatilidade tradicional, a função objetivo distribui o capital inversamente ao risco extremo, balanceado em **70% CDaR** (*Conditional Drawdown at Risk*) e **30% CVaR** (*Conditional Value at Risk*).
 
-<img width="1023" height="500" alt="newplot" src="https://github.com/user-attachments/assets/12a60d5d-f688-40fa-99f4-a9e4a63373ff" />
+<img width="1384" height="684" alt="dendograma" src="https://github.com/user-attachments/assets/acb55fb8-7945-4ec1-a3c4-50a3411cbefd" />
 
 ## 3. Engenharia de Dados e Fricção de Mercado
 Modelos teóricos colapsam na prática devido à má qualidade dos dados brutos (*Data Leakage*). Este código foi desenhado com salvaguardas quantitativas para lidar com anomalias de provedores gratuitos (como o Yahoo Finance) e a fricção do mundo real:
