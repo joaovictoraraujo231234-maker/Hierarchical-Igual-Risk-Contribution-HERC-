@@ -11,6 +11,8 @@ Para mitigar a fragilidade topológica do mercado, este projeto implementa o alg
 * **Topologia de Mercado (Machine Learning):** Aplicação do Método de Ligação de Ward (*Ward Linkage*) para agrupar hierarquicamente os ativos em um Dendrograma. O algoritmo identifica correlações implícitas e separa "clusters" econômicos naturais (ex: Renda Fixa atrelada à inflação, Utilities, Câmbio e Criptoativos).
 * **Motor Híbrido de Risco de Cauda:** A alocação de capital ocorre de forma Top-Down (bisseção recursiva). Em vez da volatilidade tradicional, a função objetivo distribui o capital inversamente ao risco extremo, balanceado em **70% CDaR** (*Conditional Drawdown at Risk*) e **30% CVaR** (*Conditional Value at Risk*).
 
+<img width="1023" height="500" alt="newplot" src="https://github.com/user-attachments/assets/12a60d5d-f688-40fa-99f4-a9e4a63373ff" />
+
 ## 3. Engenharia de Dados e Fricção de Mercado
 Modelos teóricos colapsam na prática devido à má qualidade dos dados brutos (*Data Leakage*). Este código foi desenhado com salvaguardas quantitativas para lidar com anomalias de provedores gratuitos (como o Yahoo Finance) e a fricção do mundo real:
 
@@ -18,6 +20,8 @@ Modelos teóricos colapsam na prática devido à má qualidade dos dados brutos 
 * **Winsorization e Curadoria de Qualidade:** Mecanismos de expurgo de *outliers* para neutralizar agrupamentos/desdobramentos não ajustados e *spikes* irreais nos dados de provedores, mantendo a integridade da variância.
 * **Walk-Forward Analysis (Janelas Rolantes):** Backtest estruturado através de simulação progressiva (Jan/2020 a Ago/2025). O rebalanceamento trimestral ocorre estritamente com informações passadas, sem olhar para o futuro.
 * **Custos de Transação (Turnover):** Desconto operacional de 0.20% a cada giro de portfólio, garantindo viabilidade executável.
+
+<img width="1023" height="500" alt="newplot (2)" src="https://github.com/user-attachments/assets/bee92cdb-6192-4643-83cb-52b759b5d00d" />
 
 ## 4. Validação Institucional (Holdout Set)
 Para validar cientificamente a tese de alocação, o último ano da série temporal (Set/2025 a Set/2026) foi blindado em um *Holdout Set* (dados completamente cegos para o algoritmo). 
