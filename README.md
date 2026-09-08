@@ -30,7 +30,7 @@ A aplicação dos pesos definitivos gerados no período de treinamento sobre est
 
 <img width="241" height="122" alt="WhatsApp Image 2026-09-08 at 12 08 50" src="https://github.com/user-attachments/assets/a87cb613-6ce0-4d2c-95b1-ed8bac0e5676" />
 
-<img width="798" height="500" alt="newplot" src="https://github.com/user-attachments/assets/17ad01c7-5ba3-4097-be1d-47789642cdb9" />
+<img width="1023" height="500" alt="newplot" src="https://github.com/user-attachments/assets/c7b0b5b5-0756-43b1-88c1-f47038061734" />
 
 ## 5. Stack Tecnológico
 Infraestrutura desenvolvida inteiramente em Python:
