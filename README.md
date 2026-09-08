@@ -44,7 +44,7 @@ Infraestrutura desenvolvida inteiramente em Python:
 * `plotly` e `seaborn`: Visualização espacial, mapas de calor interativos e gráficos de rosca dinâmicos.
 
 ## 6. Como Executar o Modelo
-1. Clone este repositório: [git clone [link-do-seu-repositorio]](https://github.com/...)
+1. Clone este repositório: `git clone https://github.com/joaovictoraraujo231234-maker/Hierarchical-Igual-Risk-Contribution-HERC-.git`
 2. Instale as dependências: `pip install -r requirements.txt`
 3. Abra o arquivo `.ipynb` no Jupyter Notebook ou Google Colab.
 4. O Bloco 1 permite a customização completa do universo de ativos e o reajuste dos pesos das funções de risco de cauda (CDaR/CVaR). Execute os blocos sequencialmente.
