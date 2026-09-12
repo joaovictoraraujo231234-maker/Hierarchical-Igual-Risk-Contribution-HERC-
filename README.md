@@ -53,4 +53,3 @@ Infraestrutura desenvolvida inteiramente em Python:
 O modelo integra fundamentos de macroeconomia e *valuation* quantitativo baseados nas seguintes obras:
 * LÓPEZ DE PRADO, M. *Advances in Financial Machine Learning*. John Wiley & Sons, 2018.
 * RAFFINOT, T. *Hierarchical Clustering-Based Asset Allocation*. The Journal of Portfolio Management, 2017.
-* ASSAF NETO, A. *Mercado Financeiro*. Atlas.
